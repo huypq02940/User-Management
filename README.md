@@ -1,4 +1,4 @@
-# Read me (Luồng auth)
+Luồng Auth
 ## Luồng authen
 * AuthController nhận username và password 
 * CustomUserDetailService nhận user và tìm kiếm user trong db, dùng bscript so với mật khẩu của user trong db
