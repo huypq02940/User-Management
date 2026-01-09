@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+#userList {
+    list-style: none;
+    padding: 0;
+    width: 400px;
+}
+#userList li {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+}
+.form button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120px;
+}
+.table {
+    border-collapse: collapse;
+    width: 600px;
+    margin: 30px auto;
+}
+.table td {
+    border: 1px solid ;
+    padding: 8px;
+    text-align: center;
+}
