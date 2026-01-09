@@ -1,9 +1,12 @@
 # Auth Flow
 ## Authen flow
-* AuthController nhận username và password 
-* CustomUserDetailService nhận user và tìm kiếm user trong db, dùng bscript so với mật khẩu của user trong db
-* Khi kiểm tra thành công sẽ đến JWT để có thể trả ra token
+1. AuthController nhận username và password
+2. AuthController gọi AuthenticationManager để xác thực
+3. CustomUserDetailService load user từ db
+4. Mật khẩu được so sánh bằng bscrypt
+5. Xác thực thành công sinh ra token
 ## Author flow
-* JWTFilter dùng để kiểm tra token và chích xuất username từ token đã được gửi, sau đó load user từ db
-* Sau đó sẽ kiểm tra role của người dùng, admin thì có thể xem và thêm được user
-* Còn user thì bị chặn vào các url api/user/**
+1. JWTFilter dùng để kiểm tra token và trích xuất username từ token đã được gửi và load user từ db
+2. Spring Security kiểm tra quyền truy cập dựa trên role
+   * ADMIN thì được truy cập 
+   * USER bị chặn truy cập 
